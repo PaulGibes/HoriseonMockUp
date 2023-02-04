@@ -2,4 +2,6 @@
 
 This is a mock up of a homepage for Horiseon.
 
-![screenshot](./assets/images/screenshot.png)
+https://paulgibes.github.io/HoriseonMockUp
+
+![picture](./Develop/assets/images/screenshot.png)
