@@ -1,200 +1,221 @@
+/* selecting the whole html document, this selector removes the default settings for padding and margin while also ensuring the box sizes we state are not manipulated */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+/* sets the background color of the body element */
 body {
-    background-color: #d9dcd6;
+  background-color: #d9dcd6;
 }
 
+/* to all classes named .header it sets padding, font styles to use, background color, and text color */
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
 }
 
+/* under the .header class, any h1 elements will have their font sizes changed and be displayed inline-block */
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+  display: inline-block;
+  font-size: 48px;
 }
 
+/* any .seo class, within the h1 element, within an .header class will have its text color changed */
 .header h1 .seo {
-    color: #d9dcd6;
+  color: #d9dcd6;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+/* any code within the nav element, under the .header class, will have padding on top, margins to the right, set position its position to float, to use those fonts, and change its font size*/
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+/* any ul elements with a parent of nav, under a .header class, will not have any styling applied to them */
+.header nav ul {
+  list-style-type: none;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+/* li elements found under the ul element, under the nav element, under a .header class, will be diplayed inline-block and with a margin to the left */
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
 }
 
+/* all anchor tags have that text color and no text decoration */
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
+/* adjusts the font size in all p elements */
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
+/* code under the .hero class will have a set height, width, margin on the bottom, a background image, and be centered and stretched to fit the viewport */
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .float-left {
-    float: left;
-    margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
-
+/* code under these classes will have their position set to float to the right/left and have a fixed margin */
 .float-right {
-    float: right;
-    margin-left: 25px;
+  float: right;
+  margin-left: 25px;
 }
 
+/* under the .content class the width, display type, and margin are set */
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
 }
 
+/* under the .benefits class content will have a margin to the right, padding all around, how it is positioned with float, specifies what elements can float beside and on what side with clear, sets a width, height, font styles to use, and background color */
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2589bd;
 }
 
+/* code under the .benefit- classes have set margins, text color, how they will be aligned in their given box, what type of display, and their possible max width. */
 .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
 .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
 .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
+/* Under the classes of .search-engine-optimization, .online-reputation-management, and .social-media-marketing, this sets the bottom margin, padding, height, font styles, background and text colors. */
 .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 
 .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 
+/* sets the max height of the respective classes in the img element */
 .search-engine-optimization img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
 .online-reputation-management img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
 .social-media-marketing img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
+/* sets the bottom margin as well as the font size for the respective classes in the h2 element*/
 .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
+/* in the entire footer class set the padding, what and which side elements can float beside, the font styles, and how the text will align */
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
+/* under the .footer class, any h2 elements will have this set font size */
 .footer h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
