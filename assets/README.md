@@ -1,7 +1,7 @@
-# Code Refactor Starter Code
+# Horiseon
 
 This is a mock up of a homepage for Horiseon.
 
 https://paulgibes.github.io/HoriseonMockUp
 
-![picture](./Develop/assets/images/screenshot.png)
+![picture](./assets/images/screenshot.png)
